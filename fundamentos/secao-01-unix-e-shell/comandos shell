@@ -1,0 +1,54 @@
+cd / - diretório raiz (root)
+cd ~ - diretório home (pasta pessoal)
+ls - lista os arquivos
+ls -a - lista os arquivos e arquivos ocultos
+ls *.'extensao' - lista todos os arquivos com a extensão chamada
+ls * - lista tudo dentro das subpastas
+? - caractere coringa, pode ser usado com cd ou ls por exemplo pra substituir a primeira letra
+cd - change directory
+cd 'nome' - muda para o diretório com nome informado
+cd . - referencia o próprio diretório
+cd .. - referencia o diretório pai (anterior)/retorna
+pwd - print working directory (mostra o caminho completo do diretório atual)
+mkdir - make directory (cria diretório)
+mkdir 'nome' - cria o diretório com nome informado
+cp - copy
+cp 'nome' 'nome2' - copia o arquivo de nome informado para o de nome2 informado
+cat - concatenate
+cat 'nome' - mostra o conteúdo do arquivo de nome informado
+cat > 'nome" - cria conteúdo para o arquivo de nome chamado (CUIDADO PRA NÃO SOBREESCREVER) CTRL + D - FECHA A OPERAÇÃO
+cat >> 'nome' - adiciona conteúdo para o arquivo de nome chamado
+cat 'nome1' 'nome2' > 'nomenovo' - junta os arquivos nomes1 e 2 e cria o arquivo nomenovo
+sort < 'nome' - apenas exibe no console o conteúdo de forma organizada
+sort < 'nome' > 'nomenovo' - ordena o arquivo nome e adiciona no arquivo de nomenovo
+touch 'nome' - cria arquivo com o nome informado
+mv - move
+mv 'nome' 'lugar - move arquivo nome para lugar
+mv 'nome' 'nomedesejado' - renomeia o arquivo nome para o nomedesejado
+rm - remove
+rm 'nome' - remove o arquivo nome
+rmdir - remove directory (APENAS SE ESTIVER VAZIO!!!)
+rmdir 'nome' - remove o diretório com nome informado
+rm -rf - remoção total do diretório mesmo com arquivos contidos
+less 'nome' - abre arquivo nome em uma aba virtual de visualização. Usar barra de espaço para pular páginas CTRL + Z - FECHA
+head 'nome' - mostra as 10 primeiras linhas
+head -2 'nome' - mostra apenas o valor informado (2 nesse caso) do arquivo
+tail 'nome' - mostra os 10 últimos
+tail -2 'nome' - mostra apenas o valor informado do fim pra cima do arquivo informado
+grep 'palavra' 'nome' - mostra a plavra informada dentro do arquivo informado (DIFERENCIA MAIUSCULAS E MINUSCULAS)
+grep -i 'palavra' 'nome' - mostra a palavra informada dentro do arquivo informado sem diferenciar maiúsculas e minúsculas
+grep 'frase' 'nome' - mostra a frase informada dentro do arquivo informado
+grep -v 'palavra' 'nome' - mostra tudo que nã́o contem
+grep -n 'palavra' 'nome' - mostra a palavra e sua linha
+grep -c 'palvra' 'nome' - mostra a quantidade que a palavra aparece
+wc - world count
+wc 'nome' - mostra quantidade de linhas / quantidade de palavras / quantidade de caracteres
+wc -w 'nome' - mostra quantidade de palavras
+wc -l 'nome' - mostra a quantidade de linhas
+wc - c 'nome' - mostra a quantidade de caracteres
+man 'comando' - traz o manual do comando inserido
+whatis 'comando' - traz a função do comando inserido
+apropos 'ação desejada' - traz os comandos que envolvam a ação desejada
+who - quem tem acesso ao sistema
+| - junta comandos
+who | wc -l - aqui ele pega os usuários e traz a quantidade de linhas dadas, em resumo não traz os nomes mas apenas a quantidade

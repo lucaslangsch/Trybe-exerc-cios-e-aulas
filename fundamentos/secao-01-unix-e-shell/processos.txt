@@ -1,0 +1,11 @@
+ps - lista os processos
+sleep 'numero' - adormece o terminal no tempo numero
+& - coloca o processo em background
+fg %'numero'
+ctrl + z - suspende o processo
+bg - retorna o processo e deixa em background
+jobs - traz os processos em backgroung, sendo executados ou suspenso
+ctrl + c - mata o processo que está em funcionamento no foreground
+kill %'numero' - mata o processo que está em funcionamento no background
+kill %'pid" - mata o processo que está em funcionamento no background via através do pid
+kill -9 'pid' - força a parada do processo através do pid

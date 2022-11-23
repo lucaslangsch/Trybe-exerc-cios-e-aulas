@@ -1,0 +1,47 @@
+ls -l - traz os diretórios e arquivos com informações como permissões e data de modificação. Segue exemplo
+  Permissões | Links  | Proprietário | Grupo | Tamanho | Data e Hora   | Nome
+  -----------|--------|--------------|-------|---------|---------------|---------
+  drwxr-xr-x | 2      | root 	     | root  | 4096    | Out 19 09:10  | composer
+  
+  Permissões - Tipo de item e quem tem acesso e seus níveis
+  	|d|rwxr-xr-x - d para directory e '-' para arquivo
+  	d|rwx|r-xr-x - do usuário, r de read, w de write e x de executar
+  	drwx|r-x|r-x - do grupo que o usuário está
+  	drwxr-x|r-x| - dos outros grupos
+  	
+  Links - Numero de ligações que o item possui, no caso do diretório apresenta o n de subpastas
+  
+  Proprietário - Quem criou o arquivo
+  
+  Grupo - NOme do grupo. Usado para ter níveis de acesso diferentes
+  
+  Tamanho - tamanho em bytes
+  
+  Data e Hora - da criação ou útima modificação
+  
+  Nome - nome do arquivo ou diretório
+  
+  chmod - alteração de permissões
+  chmod -u - alteração de permissão do usuário
+  chmod -u(+, - ou =)r,w e/ou x - alteração da permissão chamada(r,w,d) podendo acrescentar (+), retirar (-) ou especificar (=)
+  
+  PARA ALTERAÇÃO NA BASE OCTAL
+  
+rwx = 111 ( 7 | Acesso Total )
+r-- = 100 ( 4 | Somente Leitura )
+-w- = 010 ( 2 | Somente Escrita )
+--x = 001 ( 1 | Somente Execução )
+rw- = 110 ( 6 | Somente Leitura e Escrita )
+r-x = 101 ( 5 | Somente Leitura e Execução )
+-wx = 011 ( 3 | Somente Escrita e Execução )
+--- = 000 ( 0 | Todos Acessos Negados )
+
+r = 4
+w = 2
+x = 1
+
+1 = ligado
+0 = desligado
+
+exemplo:
+chmod 744 arquivo.txt = apenas o usuário tem acesso total, os demais podem apenas ler
